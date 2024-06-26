@@ -1,0 +1,59 @@
+{
+    "name": "zaimealabs/charts",
+    "license": "MIT",
+    "homepage": "https://zaimea.com/",
+    "description": "The ZaimeaLabs Laravel Livewire Charts.",
+    "keywords": [
+        "charts",
+        "laravel",
+        "livewire",
+        "zaimealabs"
+    ],
+    "authors": [
+        {
+            "name": "Custură Laurențiu",
+            "email": "mail@custura.de"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "livewire/livewire": "^3.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZaimeaLabs\\Charts\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZaimeaLabs\\Charts\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ZaimeaLabs\\Charts\\ChartsServiceProvider"
+            ],
+            "aliases": {
+                "Charts": "ZaimeaLabs\\Charts\\Facades\\Charts"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

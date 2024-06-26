@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use ZaimeaLabs\Charts\Models\RadialChartModel;
+
+class {{ class }}
+{
+    public function build(): RadialChartModel
+    {
+        return (new RadialChartModel)
+            ->addData([75, 60])
+            ->setTitle('Passing effectiveness.')
+            ->setSubtitle('Barcelona city vs Madrid sports.')
+            ->setLabels(['Barcelona city', 'Madrid sports'])
+            ->setColors(['#D32F2F', '#03A9F4']);
+    }
+}

@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use ZaimeaLabs\Charts\Models\LineChartModel;
+
+class {{ class }}
+{
+    public function build(): LineChartModel
+    {
+        return (new LineChartModel)
+            ->addData('Physical sales', [40, 93, 35, 42, 18, 82])
+            ->addData('Digital sales', [70, 29, 77, 28, 55, 45])
+            ->setTitle('Sales during 2021.')
+            ->setSubtitle('Physical sales vs Digital sales.')
+            ->setXAxis(['January', 'February', 'March', 'April', 'May', 'June']);
+    }
+}

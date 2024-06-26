@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use ZaimeaLabs\Charts\Models\DonutChartModel;
+
+class {{ class }}
+{
+    public function build(): DonutChartModel
+    {
+        return (new DonutChartModel)
+            ->addData([20, 24, 30])
+            ->setTitle('Top 3 scorers of the group.')
+            ->setSubtitle('Season 2021.')
+            ->setLabels(['Player 7', 'Player 10', 'Player 9']);
+    }
+}

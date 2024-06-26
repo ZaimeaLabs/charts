@@ -1,0 +1,43 @@
+name: Charts tests
+
+on:
+  push:
+    branches:
+      - main
+      - '*.x'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    env:
+      COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.COMPOSER_AUTH }}"}}'
+    runs-on: ubuntu-latest
+    strategy:
+        fail-fast: true
+        matrix:
+            php: [8.2]
+            laravel: [10.*, 11.*]
+
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
+          ini-values: error_reporting=E_ALL
+          tools: composer:v2
+          coverage: none
+
+      - name: Install Composer dependencies
+        run: |
+          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
+          composer update --no-interaction --no-suggest
+
+      - name: Execute PHP Unit tests
+        run: vendor/bin/phpunit
