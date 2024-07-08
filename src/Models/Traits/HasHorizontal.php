@@ -6,7 +6,7 @@ namespace ZaimeaLabs\Charts\Models\Traits;
 
 trait HasHorizontal
 {
-    protected string $horizontal;
+    protected bool $horizontal;
 
     public function setHorizontal(bool $horizontal): static
     {
