@@ -88,7 +88,7 @@ class ChartsBase
             ],
             'plotOptions' => [
                 'bar' => [
-                    'horizontal' => json_decode($this->horizontal()),
+                    'horizontal' => $this->horizontal(),
                     'distributed' => json_decode($this->distributed()),
                 ],
             ],
