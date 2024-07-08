@@ -19,7 +19,7 @@
         plotOptions: {
             bar: {
                 horizontal: {!! $chart->horizontal() !!},
-                distributed: '{!! $chart->distributed() !!}',
+                distributed: {!! $chart->distributed() !!},
             },
         },
         colors: {!! $chart->colors() !!},

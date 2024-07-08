@@ -6,18 +6,18 @@ namespace ZaimeaLabs\Charts\Models\Traits;
 
 trait HasHorizontal
 {
-    protected bool $horizontal;
+    protected string $horizontal;
 
     public function setHorizontal(bool $horizontal): static
     {
-        $this->horizontal = $horizontal;
+        $this->horizontal = json_encode($horizontal);
 
         return $this;
     }
 
     protected function initHorizontal(): void
     {
-        $this->horizontal = $this->defaultHorizontal();
+        $this->horizontal = json_encode($this->defaultHorizontal());
     }
 
     private function defaultHorizontal(): bool
@@ -25,7 +25,7 @@ trait HasHorizontal
         return false;
     }
 
-    public function horizontal(): bool
+    public function horizontal(): bool|string
     {
         return $this->horizontal;
     }

@@ -41,7 +41,7 @@ class ChartsBase
     use Traits\HasLegend;
     use Traits\HasYAxis;
 
-    public $key;
+    public string $key;
 
     public function __construct()
     {
@@ -71,7 +71,7 @@ class ChartsBase
         return md5(json_encode(Str::random(32)));
     }
 
-    public function toLivewire() :array
+    public function toLivewire(): array
     {
         $options = [
             'chart' => [
@@ -88,7 +88,7 @@ class ChartsBase
             ],
             'plotOptions' => [
                 'bar' => [
-                    'horizontal' => $this->horizontal(),
+                    'horizontal' => json_decode($this->horizontal()),
                     'distributed' => json_decode($this->distributed()),
                 ],
             ],
