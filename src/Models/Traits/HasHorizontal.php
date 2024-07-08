@@ -10,14 +10,14 @@ trait HasHorizontal
 
     public function setHorizontal(bool $horizontal): static
     {
-        $this->horizontal = json_encode($horizontal);
+        $this->horizontal = $horizontal;
 
         return $this;
     }
 
     protected function initHorizontal(): void
     {
-        $this->horizontal = json_encode($this->defaultHorizontal());
+        $this->horizontal = $this->defaultHorizontal();
     }
 
     private function defaultHorizontal(): bool
@@ -25,7 +25,7 @@ trait HasHorizontal
         return false;
     }
 
-    public function horizontal(): bool|string
+    public function horizontal(): bool
     {
         return $this->horizontal;
     }
