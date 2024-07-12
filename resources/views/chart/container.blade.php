@@ -18,7 +18,7 @@
         },
         plotOptions: {
             bar: {
-                horizontal: {!! $chart->horizontal() !!},
+                horizontal: '{!! $chart->horizontal() !!}',
                 distributed: {!! $chart->distributed() !!},
             },
         },
