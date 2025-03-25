@@ -19,7 +19,7 @@
         "php": "^8.2",
         "ext-json": "*",
         "livewire/livewire": "^3.0",
-        "illuminate/support": "^10.0|^11.0"
+        "illuminate/support": "^10.0|^11.0|^12.0"
     },
     "require-dev": {
         "orchestra/testbench": "^8.0|^9.0",
