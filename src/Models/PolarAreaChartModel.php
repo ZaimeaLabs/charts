@@ -22,4 +22,11 @@ class PolarAreaChartModel extends ChartsBase implements AddsSimpleDatas
         $this->addData($data);
         return $this;
     }
+
+    public function addPolarAreasWithLabels(array $data, array $labels): PolarAreaChartModel
+    {
+        $this->addData($data);
+        $this->setLabels($labels);
+        return $this;
+    }
 }

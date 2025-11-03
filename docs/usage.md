@@ -17,6 +17,12 @@ $pie = Charts::pieChart()
     ->setTitle('Posts')
     ->setLabels(['Published', 'No Published']);
 ```
+or
+```php
+$pie = Charts::pieChart()
+    ->addPiecesWithLabels([10, 20, 30], ['Red', 'Blue', 'Green'])
+    ->setTitle('Posts');
+```
 
 Remember to import the Facade to your controller with 
 ```php

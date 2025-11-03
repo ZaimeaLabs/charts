@@ -22,4 +22,11 @@ class DonutChartModel extends ChartsBase implements AddsSimpleDatas
         $this->addData($data);
         return $this;
     }
+
+    public function addPiecesWithLabels(array $data, array $labels): DonutChartModel
+    {
+        $this->addData($data);
+        $this->setLabels($labels);
+        return $this;
+    }
 }

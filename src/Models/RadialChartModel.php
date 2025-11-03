@@ -22,4 +22,11 @@ class RadialChartModel extends ChartsBase implements AddsSimpleDatas
         $this->addData($data);
         return $this;
     }
+
+    public function addRingsWithLabels(array $data, array $labels): RadialChartModel
+    {
+        $this->addData($data);
+        $this->setLabels($labels);
+        return $this;
+    }
 }
