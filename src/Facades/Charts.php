@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Facades;
+namespace Zaimea\Charts\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models\Traits;
+namespace Zaimea\Charts\Models\Traits;
 
 trait HasType
 {
@@ -14,7 +14,7 @@ trait HasType
      * @param string $type
      * @return $this
      */
-    public function setType(string $type = null): static
+    public function setType(?string $type = null): static
     {
         $this->type = $type;
 

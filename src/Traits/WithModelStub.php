@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Traits;
+namespace Zaimea\Charts\Traits;
 
 trait WithModelStub
 {

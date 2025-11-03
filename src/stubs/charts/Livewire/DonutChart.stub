@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace {{ namespace }};
 
-use ZaimeaLabs\Charts\Models\DonutChartModel;
+use Zaimea\Charts\Models\DonutChartModel;
 
 class {{ class }}
 {

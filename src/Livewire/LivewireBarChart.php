@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Livewire;
+namespace Zaimea\Charts\Livewire;
 
 use Livewire\Component;
-use ZaimeaLabs\Charts\Models\BarChartModel;
+use Zaimea\Charts\Models\BarChartModel;
 
 /**
  * Class LivewireBarChart
- * @package ZaimeaLabs\Charts\Livewire
+ * @package Zaimea\Charts\Livewire
  */
 class LivewireBarChart extends Component
 {

@@ -1,12 +1,14 @@
 {
-    "name": "zaimealabs/charts",
+    "name": "zaimea/charts",
     "license": "MIT",
     "homepage": "https://zaimea.com/",
-    "description": "The ZaimeaLabs Laravel Livewire Charts.",
+    "description": "Charts is a Laravel package that provides a simple, elegant integration of ApexCharts into your Laravel applications.",
     "keywords": [
         "charts",
         "laravel",
         "livewire",
+        "apexcharts",
+        "zaimea",
         "zaimealabs"
     ],
     "authors": [
@@ -19,20 +21,21 @@
         "php": "^8.2",
         "ext-json": "*",
         "livewire/livewire": "3.6.4",
-        "illuminate/support": "^10.0|^11.0|^12.0"
+        "illuminate/support": "^12.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^10.0|^11.0"
+        "orchestra/testbench": "^10.0",
+        "phpstan/phpstan": "^1.12.23",
+        "phpunit/phpunit": "^11.0"
     },
     "autoload": {
         "psr-4": {
-            "ZaimeaLabs\\Charts\\": "src/"
+            "Zaimea\\Charts\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ZaimeaLabs\\Charts\\Tests\\": "tests/"
+            "Zaimea\\Charts\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -45,10 +48,10 @@
         },
         "laravel": {
             "providers": [
-                "ZaimeaLabs\\Charts\\ChartsServiceProvider"
+                "Zaimea\\Charts\\ChartsServiceProvider"
             ],
             "aliases": {
-                "Charts": "ZaimeaLabs\\Charts\\Facades\\Charts"
+                "Charts": "Zaimea\\Charts\\Facades\\Charts"
             }
         }
     },

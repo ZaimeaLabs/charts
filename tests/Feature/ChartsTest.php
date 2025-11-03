@@ -2,27 +2,24 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Tests\Feature;
+namespace Zaimea\Charts\Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
-use ZaimeaLabs\Charts\Facades\Charts;
-use ZaimeaLabs\Charts\Livewire\LivewireAreaChart;
-use ZaimeaLabs\Charts\Livewire\LivewireBarChart;
-use ZaimeaLabs\Charts\Livewire\LivewireDonutChart;
-use ZaimeaLabs\Charts\Livewire\LivewireHeatMapChart;
-use ZaimeaLabs\Charts\Livewire\LivewireHorizontalBar;
-use ZaimeaLabs\Charts\Livewire\LivewireLineChart;
-use ZaimeaLabs\Charts\Livewire\LivewirePieChart;
-use ZaimeaLabs\Charts\Livewire\LivewirePolarAreaChart;
-use ZaimeaLabs\Charts\Livewire\LivewireRadarChart;
-use ZaimeaLabs\Charts\Livewire\LivewireRadialChart;
-use ZaimeaLabs\Charts\Tests\TestCase;
+use Zaimea\Charts\Facades\Charts;
+use Zaimea\Charts\Livewire\LivewireAreaChart;
+use Zaimea\Charts\Livewire\LivewireBarChart;
+use Zaimea\Charts\Livewire\LivewireDonutChart;
+use Zaimea\Charts\Livewire\LivewireHeatMapChart;
+use Zaimea\Charts\Livewire\LivewireHorizontalBar;
+use Zaimea\Charts\Livewire\LivewireLineChart;
+use Zaimea\Charts\Livewire\LivewirePieChart;
+use Zaimea\Charts\Livewire\LivewirePolarAreaChart;
+use Zaimea\Charts\Livewire\LivewireRadarChart;
+use Zaimea\Charts\Livewire\LivewireRadialChart;
+use Zaimea\Charts\Tests\TestCase;
 
 class ChartsTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_it_tests_charts_can_render_pie_charts_by_default(): void
     {
         $chart = Charts::pieChart()->setTitle('Users Test Chart');

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models\Traits;
+namespace Zaimea\Charts\Models\Traits;
 
 trait HasHeight
 {

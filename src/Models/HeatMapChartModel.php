@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models;
+namespace Zaimea\Charts\Models;
 
-use ZaimeaLabs\Charts\Contracts\AddsComplexDatas;
-use ZaimeaLabs\Charts\Models\Traits\Aggregator\Complex;
+use Zaimea\Charts\Contracts\AddsComplexDatas;
+use Zaimea\Charts\Models\Traits\Aggregator\Complex;
 
 class HeatMapChartModel extends ChartsBase implements AddsComplexDatas
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Contracts;
+namespace Zaimea\Charts\Contracts;
 
 interface AddsComplexDatas
 {

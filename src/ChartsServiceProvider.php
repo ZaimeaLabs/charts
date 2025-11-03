@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts;
+namespace Zaimea\Charts;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use ZaimeaLabs\Charts\Charts;
-use ZaimeaLabs\Charts\Console\InstallCommand;
-use ZaimeaLabs\Charts\Console\MakeChartCommand;
+use Zaimea\Charts\Charts;
+use Zaimea\Charts\Console\InstallCommand;
+use Zaimea\Charts\Console\MakeChartCommand;
 
 class ChartsServiceProvider extends ServiceProvider
 {
@@ -62,16 +62,16 @@ class ChartsServiceProvider extends ServiceProvider
             $this->packageBasePath('stubs/stubs') => base_path('stubs')
         ], 'charts-stubs');
 
-        Livewire::component('charts-area-chart', \ZaimeaLabs\Charts\Livewire\LivewireAreaChart::class);
-        Livewire::component('charts-bar-chart', \ZaimeaLabs\Charts\Livewire\LivewireBarChart::class);
-        Livewire::component('charts-donut-chart', \ZaimeaLabs\Charts\Livewire\LivewireDonutChart::class);
-        Livewire::component('charts-heatmap-chart', \ZaimeaLabs\Charts\Livewire\LivewireHeatMapChart::class);
-        Livewire::component('charts-horizontal-bar', \ZaimeaLabs\Charts\Livewire\LivewireHorizontalBar::class);
-        Livewire::component('charts-line-chart', \ZaimeaLabs\Charts\Livewire\LivewireLineChart::class);
-        Livewire::component('charts-pie-chart', \ZaimeaLabs\Charts\Livewire\LivewirePieChart::class);
-        Livewire::component('charts-polar-chart', \ZaimeaLabs\Charts\Livewire\LivewirePolarAreaChart::class);
-        Livewire::component('charts-radar-chart', \ZaimeaLabs\Charts\Livewire\LivewireRadarChart::class);
-        Livewire::component('charts-radial-chart', \ZaimeaLabs\Charts\Livewire\LivewireRadialChart::class);
+        Livewire::component('charts-area-chart', \Zaimea\Charts\Livewire\LivewireAreaChart::class);
+        Livewire::component('charts-bar-chart', \Zaimea\Charts\Livewire\LivewireBarChart::class);
+        Livewire::component('charts-donut-chart', \Zaimea\Charts\Livewire\LivewireDonutChart::class);
+        Livewire::component('charts-heatmap-chart', \Zaimea\Charts\Livewire\LivewireHeatMapChart::class);
+        Livewire::component('charts-horizontal-bar', \Zaimea\Charts\Livewire\LivewireHorizontalBar::class);
+        Livewire::component('charts-line-chart', \Zaimea\Charts\Livewire\LivewireLineChart::class);
+        Livewire::component('charts-pie-chart', \Zaimea\Charts\Livewire\LivewirePieChart::class);
+        Livewire::component('charts-polar-chart', \Zaimea\Charts\Livewire\LivewirePolarAreaChart::class);
+        Livewire::component('charts-radar-chart', \Zaimea\Charts\Livewire\LivewireRadarChart::class);
+        Livewire::component('charts-radial-chart', \Zaimea\Charts\Livewire\LivewireRadialChart::class);
 
         Blade::directive('chartsScripts', function () {
             $scriptsUrl = asset('/vendor/charts/charts.js');

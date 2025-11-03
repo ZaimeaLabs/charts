@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace {{ namespace }};
 
-use ZaimeaLabs\Charts\Models\RadarChartModel;
+use Zaimea\Charts\Models\RadarChartModel;
 
 class {{ class }}
 {

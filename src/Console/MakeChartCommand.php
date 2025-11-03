@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Console;
+namespace Zaimea\Charts\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;
-use ZaimeaLabs\Charts\Traits\WithModelStub;
+use Zaimea\Charts\Traits\WithModelStub;
 
 class MakeChartCommand extends GeneratorCommand
 {

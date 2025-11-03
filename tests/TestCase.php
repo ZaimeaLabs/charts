@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Tests;
+namespace Zaimea\Charts\Tests;
 
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use ZaimeaLabs\Charts\ChartsServiceProvider;
+use Zaimea\Charts\ChartsServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {
@@ -14,8 +14,9 @@ abstract class TestCase extends OrchestraTestCase
     {
         $app['config']->set('database.default', 'testing');
         $app['config']->set('database.connection.testing', [
-            'driver'    => 'sqlite',
-            'database'  => ':memory:'
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
         ]);
     }
 
@@ -30,8 +31,7 @@ abstract class TestCase extends OrchestraTestCase
     protected function getPackageAliases($app): array
     {
         return [
-            'Charts' => \ZaimeaLabs\Charts\Facades\Charts::class
+            'Charts' => \Zaimea\Charts\Facades\Charts::class
         ];
     }
-
 }

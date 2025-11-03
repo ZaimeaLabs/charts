@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Console;
+namespace Zaimea\Charts\Console;
 
 use Illuminate\Console\Command;
 

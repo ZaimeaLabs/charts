@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models\Traits\Aggregator;
+namespace Zaimea\Charts\Models\Traits\Aggregator;
 
 trait Complex
 {

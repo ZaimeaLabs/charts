@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models;
+namespace Zaimea\Charts\Models;
 
-use ZaimeaLabs\Charts\Contracts\AddsSimpleDatas;
-use ZaimeaLabs\Charts\Models\Traits\Aggregator\Simple;
+use Zaimea\Charts\Contracts\AddsSimpleDatas;
+use Zaimea\Charts\Models\Traits\Aggregator\Simple;
 
 class PieChartModel extends ChartsBase implements AddsSimpleDatas
 {

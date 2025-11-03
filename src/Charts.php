@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts;
+namespace Zaimea\Charts;
 
-use ZaimeaLabs\Charts\Models\AreaChartModel;
-use ZaimeaLabs\Charts\Models\BarChartModel;
-use ZaimeaLabs\Charts\Models\DonutChartModel;
-use ZaimeaLabs\Charts\Models\HeatMapChartModel;
-use ZaimeaLabs\Charts\Models\HorizontalBarModel;
-use ZaimeaLabs\Charts\Models\LineChartModel;
-use ZaimeaLabs\Charts\Models\PieChartModel;
-use ZaimeaLabs\Charts\Models\PolarAreaChartModel;
-use ZaimeaLabs\Charts\Models\RadarChartModel;
-use ZaimeaLabs\Charts\Models\RadialChartModel;
+use Zaimea\Charts\Models\AreaChartModel;
+use Zaimea\Charts\Models\BarChartModel;
+use Zaimea\Charts\Models\DonutChartModel;
+use Zaimea\Charts\Models\HeatMapChartModel;
+use Zaimea\Charts\Models\HorizontalBarModel;
+use Zaimea\Charts\Models\LineChartModel;
+use Zaimea\Charts\Models\PieChartModel;
+use Zaimea\Charts\Models\PolarAreaChartModel;
+use Zaimea\Charts\Models\RadarChartModel;
+use Zaimea\Charts\Models\RadialChartModel;
 
 class Charts
 {

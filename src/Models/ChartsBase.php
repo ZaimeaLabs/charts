@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Models;
+namespace Zaimea\Charts\Models;
 
 use Illuminate\Support\Str;
 
 /**
  * Class ChartsBase
- * @package ZaimeaLabs\Charts\Models
+ * @package Zaimea\Charts\Models
  */
 class ChartsBase
 {

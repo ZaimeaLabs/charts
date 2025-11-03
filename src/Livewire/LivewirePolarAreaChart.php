@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ZaimeaLabs\Charts\Livewire;
+namespace Zaimea\Charts\Livewire;
 
 use Livewire\Component;
-use ZaimeaLabs\Charts\Models\PolarAreaChartModel;
+use Zaimea\Charts\Models\PolarAreaChartModel;
 
 /**
  * Class LivewirePolarAreaChart
- * @package ZaimeaLabs\Charts\Livewire
+ * @package Zaimea\Charts\Livewire
  */
 class LivewirePolarAreaChart extends Component
 {
