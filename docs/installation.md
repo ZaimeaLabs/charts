@@ -1,7 +1,10 @@
 ---
 title: How to install package
 description: How to install package
-github: https://github.com/zaimealabs/charts/edit/main/
+github: https://github.com/zaimealabs/charts/edit/main/docs
+onThisArticle: true
+sidebar: true
+rightbar: true
 ---
 
 # Charts
