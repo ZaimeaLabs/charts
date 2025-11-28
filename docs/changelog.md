@@ -7,4 +7,4 @@ sidebar: true
 rightbar: false
 ---
 
-All notable changes to Charts are documented [on GitHub](https://github.com/zaimealabs/charts/blob/main/CHANGELOG.md)
+All notable changes to `Charts` are documented [on GitHub](https://github.com/zaimealabs/charts/blob/main/CHANGELOG.md)
